@@ -72,43 +72,56 @@ body {
   display: flex;
   flex-direction: row;
   transition: transform 1s;
+  height: 50px;
 }
 
 #pinterest-card-btn-link {
-  flex: 8;
+  flex: 3;
   background-color: white;
   border-radius: 40px;
   margin-right: 10px;
-  font-size: 24px;
-  padding-left: 15px;
+  font-size: 22px;
+  padding: 10px;
 
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
+#pinterest-card-btn-link i {
+  font-size: 20px;
+  margin-right: 3px;
+  margin-left: 5px;
+}
+
 #pinterest-card-btn-link div {
   display: inline;
+  font-weight: bold;
 }
 
 #pinterest-card-btn-share {
   background-color: white;
   width: 50px;
-  height: 50px;
   border-radius: 50%;
   margin-right: 10px;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #pinterest-card-btn-more {
   background-color: white;
   width: 50px;
-  height: 50px;
   border-radius: 50%;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.fa-location-arrow {
+.fi-bs-arrow-up-right {
+  color: black;
   display: inline-block;
 }
 
@@ -118,4 +131,10 @@ body {
 
 #pinterest-card:hover #pinterest-card-btn-bottom {
   transform: translateY(-100px);
+}
+
+.fa-arrow-up-from-bracket,
+.fa-ellipsis {
+  font-size: 20px;
+  font-weight: bold;
 }
