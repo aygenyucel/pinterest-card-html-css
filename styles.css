@@ -25,19 +25,21 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25));
+
   display: none;
+  transition: all 1s;
 }
 
 #pinterest-card:hover #pinterest-card-overlay {
   display: block;
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25));
 }
 
 #pinterest-card-btn-top {
   user-select: none;
   margin: 30px;
   position: absolute;
-  top: 0;
+  top: -100px;
   right: 0;
   margin-top: 20px;
   margin-right: 20px;
@@ -48,6 +50,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: transform 1s;
 }
 
 #pinterest-card-btn-save {
@@ -63,11 +66,12 @@ body {
   margin-right: 20px;
   margin-left: 20px;
   user-select: none;
-  bottom: 0;
+  bottom: -100px;
   left: 0;
   right: 0;
   display: flex;
   flex-direction: row;
+  transition: transform 1s;
 }
 
 #pinterest-card-btn-link {
@@ -106,4 +110,12 @@ body {
 
 .fa-location-arrow {
   display: inline-block;
+}
+
+#pinterest-card:hover #pinterest-card-btn-top {
+  transform: translateY(100px);
+}
+
+#pinterest-card:hover #pinterest-card-btn-bottom {
+  transform: translateY(-100px);
 }
