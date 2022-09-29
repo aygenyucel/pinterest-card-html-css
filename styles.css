@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#pinterest-card {
+  width: 350px;
+  height: 500px;
+  position: relative;
+  margin: auto;
+  top: 12vh;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+#pinterest-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#pinterest-card-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25));
+  display: none;
+}
+
+#pinterest-card:hover #pinterest-card-overlay {
+  display: block;
+}
+
+#pinterest-card-btn-top {
+  user-select: none;
+  margin: 30px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 20px;
+  margin-right: 20px;
+  width: 120px;
+  height: 80px;
+  background-color: #e60223;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#pinterest-card-btn-save {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+#pinterest-card-btn-bottom {
+  position: absolute;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  user-select: none;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+#pinterest-card-btn-link {
+  flex: 8;
+  background-color: white;
+  border-radius: 40px;
+  margin-right: 10px;
+  font-size: 24px;
+  padding-left: 15px;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#pinterest-card-btn-link div {
+  display: inline;
+}
+
+#pinterest-card-btn-share {
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  text-align: center;
+}
+
+#pinterest-card-btn-more {
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.fa-location-arrow {
+  display: inline-block;
+}
